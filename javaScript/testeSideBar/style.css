@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.sidebar {
+    display: inline-block;
+    background-color: orange;
+    position: flex;
+    flex-direction: column;
+    width: 25vh;
+    height: 100vh;
+    box-shadow: 3px 0px 0px 0px rgba(1,1,1,0.1) ;
+    
+
+}
+.logo{
+    padding: 50px;
+}
+.sidebar hr{
+    border-width: 1px;
+    
+}
+
+.sidebar div.link a{
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    justify-content: left;
+}
+.sidebar div.link a:hover{
+    background-color: white;
+    color: orange;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+
+}
+

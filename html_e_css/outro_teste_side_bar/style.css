@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #444444;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 13fr;
+}
+
+
+header {
+    padding: 10px;
+    grid-column: 2;
+    grid-row: 1;
+    background-color: orange;
+
+}
+nav {
+    grid-column: 1/2;
+    grid-row: span 2;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    box-shadow: 1px 0px 2px rgba(0,0,0,0.3); 
+    z-index: 2;
+
+}
+.logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    background-color: blueviolet;
+}
+.img-logo{
+    width: 56px;
+}
+.nome-logo {
+    color: whitesmoke;
+    font-size: 36px;
+    font-weight: 700;
+}
+.botoes {
+    background-color: aqua;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: start;
+}
+.botoes a
+{
+    padding: 20px;
+}
+.botoes a:hover {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: black;
+}
+main {
+    background-color: whitesmoke;
+    grid-column: 2/3;
+    grid-row: span 1;
+    z-index: 1;
+}
